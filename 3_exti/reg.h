@@ -101,6 +101,11 @@
 
 #define EXTI_PR_OFFSET 0x14
 
+#define MR0 0
+
+#define TR0 0
+#define PR0 0
+
 //SYSCFG
 #define SYSCFG_BASE 0x40013800
 
