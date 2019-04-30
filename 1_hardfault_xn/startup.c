@@ -41,8 +41,11 @@ void reset_handler(void)
 	blink_count(LED_BLUE, 20);
 
 	// execute from 0x40000000
-	??????
-
+	((void(*)(void))0x40000000)();
+	/*Using three lines to span it*/
+	/*void(*fun_ptr)(void);
+	fun_ptr=0x40000000;
+	fun_ptr();*/
 	blink(LED_BLUE);
 }
 
